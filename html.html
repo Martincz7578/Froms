@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<style>
+    .hidden{
+        display: none;
+    }
+    body{
+        background-color: grey  ;
+    }
+    .back{
+        background-color: aliceblue;
+    }
+    .front{
+        background-color: dimgrey;
+    }
+</style>
+
+<header>
+    <div class="front">
+    <h6>LOL</h6>
+    </div>
+</header>
+
+<body>
+    <div class="back">
+    <h1>HTML</h1>
+    <form>
+       <input type="checkbox" id="html" name="notfav" value="html">
+       <label for="html">HTML</label><br>
+       <input type="checkbox" id="cpp" name="fav" value="cpp">
+       <label for="cpp">C++</label><br>
+       <input type="checkbox" id="py" name="py" value="py">
+       <label for="py">Python</label><br>
+       <input type="checkbox" id="ASM" name="ASM" value="ASM">
+       <label for="ASM">Assembler</label><br>
+       <button id="sub" type="button" class="hidden"><a href="1/index.html">submit</a></button>
+    </form>
+</body>
+
+<script>
+     $(document).ready(function(){
+            $('#cpp').click(function(){
+                if($('#sub').hasClass('hidden')){
+                    $('#sub').removeClass('hidden');
+                }else{
+                    $('#sub').addClass('hidden');
+                }
+            });
+        });
+</script>
+
+<footer>
+    <div class="front">
+    <h5>Just try xd</h5>
+    </div>
+</footer>
+</html>
